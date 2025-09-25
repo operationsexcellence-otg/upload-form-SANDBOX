@@ -38,7 +38,7 @@ uploadForm.addEventListener('submit', (e) => {
     });
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST","YOUR_POWER_AUTOMATE_ENDPOINT_HERE");
+    xhr.open("POST","https://default2e0f74ad066f44ea9cf9557b3c2f8d.49.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/65342f7c857c426a9261ecdf20b640e8/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ZJ8XkmkLidoYcDS5xtk3aUA0nEKIs18j4rnVi31BCHc");
     xhr.setRequestHeader("Content-Type", "application/json");
 
     xhr.upload.onprogress = function(e){
@@ -64,7 +64,7 @@ continueBtn.addEventListener("click", ()=>{
   document.getElementById('uploadSection').style.display="none";
   document.getElementById('formSection').style.display="block";
 
-  const baseUrl = "YOUR_MS_FORM_PREFILLED_LINK_HERE";
+  const baseUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=rXQPLm8G6kSc-VV7PC-NSeWT8yXfPp1Jnc9wKq4L7J9UMERCSURWRVg1SThXVkhVU1hYSTZSVzNSTi4u&r388ad2dde4704c85a4bfca0f7a0468b8=0001&red1c88014cb24ac99c1bc085902d6354=TEST123&r598411bb4c17426b92deb8699b9b1fe2=%22Batam%22";
   msFormFrame.src = `${baseUrl}&red1c88014cb24ac99c1bc085902d6354=${submissionID}`;
 
   finishBtn.style.display="block";
