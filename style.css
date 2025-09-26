@@ -106,6 +106,7 @@ button {
   position: relative;
   width: 100%;
   padding-top: 75%; /* 4:3 ratio, adjust if needed */
+  height: 620px;
 }
 
 .form-container iframe {
