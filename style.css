@@ -86,3 +86,18 @@ button {
   .report-card { padding: 15px; }
   button { font-size: 0.9rem; padding: 8px 16px; }
 }
+
+/* Hide the real file input */
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload label {
+  cursor: pointer;
+  min-width: 140px;
+}
+
+#fileName {
+  display: inline-block;
+  vertical-align: middle;
+}
