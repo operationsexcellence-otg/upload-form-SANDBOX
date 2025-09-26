@@ -20,7 +20,12 @@
       <div id="uploadSection" class="section-box p-3 mb-4">
         <h6 class="fw-semibold mb-3">📎 Attach Files (Optional)</h6>
         <form id="uploadForm">
-          <input type="file" class="form-control mb-3" id="fileInput" required />
+          <div class="custom-file-upload mb-3 text-center">
+            <input type="file" id="fileInput" required />
+            <label for="fileInput" class="btn btn-outline-primary">Choose File</label>
+            <span id="fileName" class="ms-2 text-muted small">No file chosen</span>
+          </div>
+
           <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary">Upload File</button>
           </div>
