@@ -19,7 +19,7 @@ body {
 .report-card {
   background: var(--card-bg);
   max-width: 850px;
-  margin: auto;
+  margin:0%;
   border-radius: 12px;
 }
 
