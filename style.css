@@ -1,14 +1,14 @@
 :root {
   --primary: #1a3e72;
   --primary-dark: #16325c;
-  --bg-light: #f0f4f8;
+  --bg-light: #f5f7fb;
   --card-bg: #fff;
 }
 
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(135deg, var(--bg-light), #d9e2ec);
+  background: var(--bg-light);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -16,123 +16,66 @@ body {
   padding: 15px;
 }
 
-.card {
+.report-card {
   background: var(--card-bg);
-  width: 100%;
-  max-width: 700px;
-  border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-  overflow: hidden;
-  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 12px;
 }
 
-.card-header {
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-}
-.card-header h2 {
-  margin: 0;
-  color: var(--primary);
-  font-size: 1.4rem;
-  font-weight: 600;
+.section-box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
 }
 
 iframe {
   width: 100%;
-  min-height: 76vh;
+  min-height: 60vh;
   border: none;
   display: none;
-  margin-top: 15px;
+  border-radius: 8px;
+  background: #f9fafb;
 }
 
 .spinner {
   border: 4px solid #f3f3f3;
   border-top: 4px solid var(--primary);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   animation: spin 1s linear infinite;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-.upload-box {
-  border: 2px dashed var(--primary);
-  padding: 25px;
-  text-align: center;
-  border-radius: 12px;
-  background: #f8fafc;
-}
-
-.upload-box h3 {
-  margin: 0 0 15px;
-  font-size: 1.1rem;
-  color: var(--primary-dark);
-}
-
-.upload-box input[type="file"] {
-  display: block;
-  margin: 10px auto;
-  font-size: 0.95rem;
-}
-
 button {
-  margin-top: 15px;
-  padding: 12px 20px;
-  border: none;
+  padding: 10px 20px;
   border-radius: 8px;
-  background: var(--primary);
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
   font-weight: 500;
-  width: 100%;
-  max-width: 220px;
+  min-width: 180px;
 }
-button:hover { background: var(--primary-dark); }
 
 #message {
-  margin-top: 15px;
   font-weight: 500;
   font-size: 0.95rem;
 }
 
 #generatedCode {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   background: #eef7ff;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 10px;
   color: var(--primary);
-  letter-spacing: 2px;
-}
-
-.progress-container {
-  margin-top: 15px;
-  background: #eee;
-  border-radius: 8px;
-  overflow: hidden;
-  height: 12px;
-  display: none;
-}
-.progress-bar {
-  width: 0%;
-  height: 100%;
-  background: var(--primary);
-  transition: width 0.2s ease;
-}
-
-#finishBtn {
-  display: none;
-  margin-top: 15px;
+  letter-spacing: 1px;
 }
 
 #countdownMsg {
-  margin-top: 15px;
-  font-size: 1rem;
+  margin-top: 12px;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--primary-dark);
   text-align: center;
@@ -140,6 +83,6 @@ button:hover { background: var(--primary-dark); }
 }
 
 @media (max-width: 600px) {
-  .card { padding: 15px; }
-  button { font-size: 0.95rem; padding: 10px; }
+  .report-card { padding: 15px; }
+  button { font-size: 0.9rem; padding: 8px 16px; }
 }
